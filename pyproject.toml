@@ -1,0 +1,26 @@
+[project]
+name = "CRON-AE-Automation"
+version = "0.1.0"
+description = "CRON-AE-Automation"
+authors = [
+    {name = "bastian-armananta",email = "putra.armananta@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "pre-commit>=4.2.0",
+    "pytz>=2025.2",
+    "ruff>=0.11.10",
+    "sqlmodel>=0.0.24",
+]
+
+
+[tool.ruff]
+line-length = 100
+indent-width = 4
+
+
+[tool.ruff.format]
+quote-style = "single"
