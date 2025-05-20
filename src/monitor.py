@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 from utils.logger import logging
 from typing import Optional
 from pathlib import Path
@@ -12,11 +12,12 @@ class DataMonitoring:
         pass
 
     def format(self, assets: list, templates: list) -> Optional[dict]:
+        base_path = '192.168.100.104/Database_Asset_3/ae_auto_asset/Output'
         return [
             {
                 'asset_path': asset,
                 'template_path': template,
-                'output_path': '192.168.100.104/Database_Asset_3/ae_auto_asset/Output',
+                'output_path': os.path.join(base_path, os.path.dirname(asset.split('Yumna/')[-1])),
             }
             for asset in assets
             for template in templates

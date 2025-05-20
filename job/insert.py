@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
-from services.monitor import DataMonitoring
+from src.monitor import DataMonitoring
 from utils.helper import save_json
 from services.ftp import NasFTP
 from src.secret import NAS_HOST, NAS_PASSWORD, NAS_PORT, NAS_USERNAME, NAS_OUTPUT

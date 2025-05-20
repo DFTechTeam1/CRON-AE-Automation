@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
-from services.monitor import DataMonitoring
+from src.monitor import DataMonitoring
 from utils.helper import save_json, load_json
 from utils.logger import logging
 from services.ftp import NasFTP
