@@ -35,7 +35,7 @@ This project was developed using WSL (Ubuntu 24.04.2 LTS on Windows 11) and Pyth
     sh scripts\run_executor.sh --path job\update.py --env <environment>
     ```
 
-## Replace <environment> with one of:
+## Replace environment with one of:
 - development
 - staging
 - production
